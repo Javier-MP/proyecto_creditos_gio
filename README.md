@@ -12,4 +12,4 @@ Este es un proyecto de gestión de créditos desarrollado con Flask y SQLite.
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/Javier-MP/proyecto_creditos.git
+   git clone https://github.com/Javier-MP/proyecto_creditos_gio.git
