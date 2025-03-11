@@ -1,7 +1,6 @@
 document.getElementById('creditoForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Limpiar mensajes de error
     document.querySelectorAll('.error').forEach(el => el.textContent = '');
 
     const cliente = document.getElementById('cliente').value.trim();
@@ -12,7 +11,6 @@ document.getElementById('creditoForm').addEventListener('submit', function(e) {
 
     let valid = true;
 
-    // Validaciones
     if (cliente === "") {
         document.getElementById('clienteError').textContent = 'El nombre del cliente es obligatorio.';
         valid = false;
@@ -52,7 +50,7 @@ document.getElementById('creditoForm').addEventListener('submit', function(e) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            // Aquí puedes agregar código para actualizar la tabla
+        
         });
     }
 });
